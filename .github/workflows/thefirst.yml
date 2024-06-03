@@ -1,1 +1,13 @@
-
+name: First Workflow
+on: workflow_dispatch
+jobs:
+  basic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print greeting
+        run: |
+          echo "hello world"
+          echo "zipper world"
+      - name: goodbye
+        run: echo "goodbye taco"
+      
